@@ -35,8 +35,22 @@ Command Structure :  **Command_name** -options input
 |Section|		Meaning|Example|
 |------|-------------|-------------|
 |\[THING\]| Optional| which [-a] |
-| <THING> |Mandatory| |
+| \<THING\> |Mandatory| |
 |THING ...| can run multiple repeatedly |which date cal|
 |THING1 |Use THING1 OR THING2. Not Both.| |
 |THING in italics| Replace THING with whatever is appropriate.| 
     
+If you don't find a man page you can try the help command.
+
+# Command I/O pipelines
+
+Inputs : STDIN(0) and arguments  
+Outputs : STDOUT(1) and STDERR (2)  
+
+* Redirection 
+
+    * cat 1> output.txt -  writing or redirecting stream 1 ie., standard output data stream to output file.  1 can be ignored but there is no space between 1 and >. This will remove everything in the output.txt and write the current stream (Truncation). Use cat >> output.txt to append
+    * 
+
+
+
