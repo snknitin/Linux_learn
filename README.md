@@ -9,8 +9,22 @@ Commands are just case-sensitive text, but when you execute them the meaning of 
 * clear (Ctrl + L)
 * history (!4)  (!! most recent command)
 
-Command Structure :  Command_name options input  
+Command Structure :  **Command_name** -options input  
 **echo $PATH** gives you all the bin folders separated by : with programs for these commands and it looks for them from left most folder. If it cannot find it in any of the folders it displays command not found. If the same named program is in multiple folders, it picks the one it encounters first from the left in the path. using **which command_name** will show you where to find it.
 
 * options for commands can be short form like -u or long form like --universal. Multiple options can be chained. -a -b -c can be -abc or -bca but long forms cannot be chained.
-* 
+
+# Using the Manual
+
+
+|Section|		Contains|
+|------|-------------|
+|1*|User Commands|Commands that can be run from the shell by a normal user (typically no administrative privileges are needed)|
+|2|System Calls|Programming functions used to make calls to the Linux kernel|
+|3|C Library Functions|Programming functions that provide interfaces to specific programming libraries|
+|4|Devices and Special files|File system nodes that represent hardware devices or software devices.|
+|5*|File formats and conventions|The structure and format of file types or specific configuration files.|
+|6|Games|Games available on the system|
+|7|Misc|Overviews of miscellaneous topics such as protocols, filesystems and so on|
+|8*|Sys admin|Commands that require root or other administrative privileges to use|
+
