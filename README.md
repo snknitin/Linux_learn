@@ -50,7 +50,11 @@ Outputs : STDOUT(1) and STDERR (2)
 * Redirection 
 
     * cat 1> output.txt -  writing or redirecting stream 1 ie., standard output data stream to output file.  1 can be ignored but there is no space between 1 and >. This will remove everything in the output.txt and write the current stream (Truncation). Use cat >> output.txt to append
-    * 
+    * cat 2>>error.txt to write the error
+    * cat 1>>output.txt 2>>error.txt
+    * cat 0< input.txt to read from input
+    * cat 0< input.txt 1>>output.txt to copy one file content to another
+    * You can also pass data from one terminal to another as terminal is also treated as a file. Get the location using **tty**
 
 
 
