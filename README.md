@@ -17,8 +17,8 @@ Command Structure :  **Command_name** -options input
 # Using the Manual
 
 
-|Section|		Contains|
-|------|-------------|
+|Section|		Contains|Description|
+|------|-------------|-------------|
 |1*|User Commands|Commands that can be run from the shell by a normal user (typically no administrative privileges are needed)|
 |2|System Calls|Programming functions used to make calls to the Linux kernel|
 |3|C Library Functions|Programming functions that provide interfaces to specific programming libraries|
@@ -28,3 +28,15 @@ Command Structure :  **Command_name** -options input
 |7|Misc|Overviews of miscellaneous topics such as protocols, filesystems and so on|
 |8*|Sys admin|Commands that require root or other administrative privileges to use|
 
+
+    man -k which  # k is for search and gives section number
+    man section_num which  # section_num =1 for user commands and can be ignored
+    
+|Section|		Meaning|Example|
+|------|-------------|-------------|
+|\[THING\]| Optional| which [-a] |
+| <THING> |Mandatory| |
+|THING ...| can run multiple repeatedly |which date cal|
+|THING1 |Use THING1 OR THING2. Not Both.| |
+|THING in italics| Replace THING with whatever is appropriate.| 
+    
