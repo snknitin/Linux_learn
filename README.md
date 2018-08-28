@@ -58,5 +58,18 @@ Outputs : STDOUT(1) and STDERR (2)
     * You can also pass data from one terminal to another as terminal is also treated as a file. Get the location using **tty**
 
 * Pipeline
-    * command1 **|** command2
+    * command1 **|** command2 - stdout of command1 is stdin of command2
+    * **Tee** and **xargs**
+        * Tee is like a t-junction for stdout from the first command to go down in two different paths. Eg : stdout1 goes to stdout_random(like a file) and stdin_command2. Uou can save your data and still keep your pipeline flowing
+        
+                ls - l | tee file.txt | less
+        * xargs - Certain functions like echo don't take in stdin. They only use command line arguments. So we need to convert the stdin into command line arguments. We pipe stdout of command 1 into xargs
+        
+                date | cut --delimiter " " --fields=1 | xargs echo
+                cat filestodelete.txt | xargs rm
 
+# Aliases
+
+Nicknames for commands or command pipelines to use them easily. First thing to do is create a file called **.bash_aliases** . The fullstop makes it a hidden file. 
+
+* alias nickname = 'command or command pipeline'
