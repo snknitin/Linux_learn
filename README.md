@@ -8,6 +8,7 @@ Commands are just case-sensitive text, but when you execute them the meaning of 
 * date
 * clear (Ctrl + L)
 * history (!4)  (!! most recent command)
+* cut < file.txt --delimiter " " --fields 1
 
 Command Structure :  **Command_name** -options input  
 **echo $PATH** gives you all the bin folders separated by : with programs for these commands and it looks for them from left most folder. If it cannot find it in any of the folders it displays command not found. If the same named program is in multiple folders, it picks the one it encounters first from the left in the path. using **which command_name** will show you where to find it.
@@ -56,5 +57,6 @@ Outputs : STDOUT(1) and STDERR (2)
     * cat 0< input.txt 1>>output.txt to copy one file content to another
     * You can also pass data from one terminal to another as terminal is also treated as a file. Get the location using **tty**
 
-
+* Pipeline
+    * command1 **|** command2
 
