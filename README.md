@@ -3,7 +3,7 @@ Mastering the Linux Command Line
 
 
 
-* cal
+* cal (cal -y or cal 2018)
 * date
 * clear (Ctrl + L)
-* history (!<put number of the command here>)  (!! most reacent command)
+* history (!4)  (!! most reacent command)
