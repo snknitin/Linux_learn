@@ -73,3 +73,11 @@ Outputs : STDOUT(1) and STDERR (2)
 Nicknames for commands or command pipelines to use them easily. First thing to do is create a file called **.bash_aliases** . The fullstop makes it a hidden file. 
 
 * alias nickname = 'command or command pipeline'
+
+
+# Directory Structure
+
+Linux follows a tree structure. The root is / which has the following sub folders :
+
+*
+*
