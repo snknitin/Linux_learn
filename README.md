@@ -106,4 +106,7 @@ Linux follows a tree structure. The root is / which has the following sub folder
 
 # File extensions
 
-File command gives you info about a file like the header. Files whose extension is changed will still have the same header. Extensions may be important to a software but not to the linux file system
+File command gives you info about a file like the header. Files whose extension is changed will still have the same header. Extensions may be important to a software but not to the linux file system. You can have any random extension to a file but it won't fool the OS.
+
+* Wildcards
+    * This is a regualr expression. like `.`,`*`etc.  `ls *` 
