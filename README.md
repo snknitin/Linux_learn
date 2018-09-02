@@ -79,14 +79,27 @@ Nicknames for commands or command pipelines to use them easily. First thing to d
 
 Linux follows a tree structure. The root is / which has the following sub folders :
 
-* bin
-* boot
-* dev
-* etc
-* home
-* media
-* lib
-* mnt
-* root
-* usr
-* var
+* bin - Stores common linux user common binaries like date , cal etc
+* boot - Bootable kernel and config
+* dev - represents devices
+    * tty = terminal
+    * ram =RAM
+    * cd = cdROM
+    * fd = floppy disk, sd= hd = hard disk
+* etc - Administrative config files
+* home -  users and their folders 
+* media -
+* lib - shared libraries needed by applications in bin and sbin
+* mnt - moun external devices, superseded by media
+* misc - directory used to automount filesystems on request
+* opt - additional or optional softwares are stored here
+* proc - Info about the system resources
+* root - home folder for the root user
+* sbin - administrative commands(binaries) for super user
+* tmp - temporary files used by running apps
+* usr - contains files pertaining to user that in theory don't change after installation
+* var - contains directories of variable data like system log files that could be used by various applications
+
+# Navigating the File system
+
+~  means path to the current directory or rather the home directory. pwd means present working directory.
