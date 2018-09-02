@@ -79,5 +79,14 @@ Nicknames for commands or command pipelines to use them easily. First thing to d
 
 Linux follows a tree structure. The root is / which has the following sub folders :
 
-*
-*
+* bin
+* boot
+* dev
+* etc
+* home
+* media
+* lib
+* mnt
+* root
+* usr
+* var
