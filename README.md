@@ -103,3 +103,7 @@ Linux follows a tree structure. The root is / which has the following sub folder
 # Navigating the File system
 
 ~  means path to the current directory or rather the home directory. pwd means present working directory.
+
+# File extensions
+
+File command gives you info about a file like the header. Files whose extension is changed will still have the same header. Extensions may be important to a software but not to the linux file system
