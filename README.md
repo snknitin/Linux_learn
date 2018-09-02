@@ -104,9 +104,16 @@ Linux follows a tree structure. The root is / which has the following sub folder
 
 ~  means path to the current directory or rather the home directory. pwd means present working directory.
 
-# File extensions
+# Files
 
 File command gives you info about a file like the header. Files whose extension is changed will still have the same header. Extensions may be important to a software but not to the linux file system. You can have any random extension to a file but it won't fool the OS.
 
 * Wildcards
     * This is a regualr expression. like `.`,`*`etc.  `ls *` 
+* touch command - create a file
+* Brace Expansion - 
+
+        mkdir {a,b,c}_{1,2,3}     #a_1,b_1,c_1,a_2,b_2,c_2,a_3,b_3,c_3
+        touch {a,b,c,d}_{1..5}/file{1..100}  # creates 100 files in each of the folders 
+
+
