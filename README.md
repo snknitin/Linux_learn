@@ -111,9 +111,12 @@ File command gives you info about a file like the header. Files whose extension 
 * Wildcards
     * This is a regualr expression. like `.`,`*`etc.  `ls *` 
 * touch command - create a file
+* mkdir -p bla/abc/poof   : this will create the path structure even if the folders don't exist
 * Brace Expansion - 
 
         mkdir {a,b,c}_{1,2,3}     #a_1,b_1,c_1,a_2,b_2,c_2,a_3,b_3,c_3
         touch {a,b,c,d}_{1..5}/file{1..100}  # creates 100 files in each of the folders 
 
+# Deletion
 
+rm
