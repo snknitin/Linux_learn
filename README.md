@@ -181,5 +181,7 @@ Only typing `find` or `find \\ ` will display everything(files and folders) from
     sudo find / -type f -size -100k -o -size -5M   # -o is an OR condition
     sudo find / -type f -size +100k | wc -l        # send the output to wordcount command to see how many
     
+Exec option lets you run another command on each of these results
 
+    sudo find / -maxdepth 14 -type f -size +100k -exec cp {} ~/Desktop/copy_here
 
