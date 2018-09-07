@@ -150,7 +150,7 @@ The config file for nano is in the following file. you can set spellchecker and 
     sudo nano /etc/nanorc
 
 
-# Search using Locate
+# Search using Locate 
 
 `Locate` command is case sensitive so use -i to make it insensitive. You can also limit the number of results using --limit <num>. It uses a database to get the info and you can try `locate S` to get the info. This is updated only once a day. 
 
@@ -165,6 +165,15 @@ Update this database using the `updatedb` command
     touch findme.txt    # creates
     locate findme.txt   # returns nothing
     sudo updatedb       # administrative command
+    
+
+# Find
+
+Only typing `find` or `find \\ ` will display everything(files and folders) from that point or location, where locate only shows files. We can control some of the way it searches(depth)
+
+    find . -maxdepth 3     # it is - even though it is longform
+    find . type d  # show all directories
+    find . type f  # show all files
     
 
 
