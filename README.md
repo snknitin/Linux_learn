@@ -160,7 +160,12 @@ The config file for nano is in the following file. you can set spellchecker and 
        locate --follow *.conf            # check symlinks
        
        
+Update this database using the `updatedb` command
 
+    touch findme.txt    # creates
+    locate findme.txt   # returns nothing
+    sudo updatedb       # administrative command
+    
 
 
 
