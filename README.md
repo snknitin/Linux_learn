@@ -190,7 +190,13 @@ create a file called needle in one random folder out of 500,each containing 100 
     touch haystack/folder$(shuf -i 1-500 -n l)/needle.txt  
     find haystack/ -type f -name "needle.txt" -exec mv {} ~/Desktop/ \;
     
-    
+## Viewing files
+
+* `cat` used to concatenate or read files
+* `tac` is reverse of cat. It reverses a file/input vertically
+* `rev` allows you to reverse each line horizontally
+* `less` helps you scroll through line by line. `head` and `tail` let you see the top few or bottom few lines respectively. default is 10 lines. `head -n 2` gives top 2 lines 
+
     
     
     
