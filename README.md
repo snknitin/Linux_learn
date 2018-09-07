@@ -205,7 +205,10 @@ create a file called needle in one random folder out of 500,each containing 100 
     sort nums.txt                   # This sorts based on the first digit and not the value of the number
     sort -n nums.txt                # Sort based on number value in ascending
     sort -u num0-9.txt              # Don't show duplicated. Unique
-    
+  
+Use a key to sort by giving -k  (keydef)
+
+    ls -l /etc |head -n 20| sort -k 5nr  # Sort by the 5th column based on the numeric-value/size in reverse
     
     
     
