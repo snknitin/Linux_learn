@@ -197,6 +197,14 @@ create a file called needle in one random folder out of 500,each containing 100 
 * `rev` allows you to reverse each line horizontally
 * `less` helps you scroll through line by line. `head` and `tail` let you see the top few or bottom few lines respectively. default is 10 lines. `head -n 2` gives top 2 lines 
 
+
+## Sorting Data
+
+    sort words.txt                  # Alphabetical order
+    sort -r words.txt               # reverse
+    sort nums.txt                   # This sorts based on the first digit and not the value of the number
+    sort -n nums.txt                # Sort based on number value in ascending
+    sort -u num0-9.txt              # Don't show duplicated. Unique
     
     
     
