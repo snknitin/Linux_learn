@@ -143,6 +143,11 @@ Using nano and a filename will create the file and open a sort of an interface w
     ^X - exit
     ^R - read file and insert it in the current file
     ^W - where the search string is which is case insensitive( more options like M-C - this means press Alt+C)
+    ^\ - Replace
+    
+The config file for nano is in the following file. you can set spellchecker and other features in here by uncommenting them. Run with sudo
+
+    sudo nano /etc/nanorc
 
 
 
