@@ -135,3 +135,18 @@ rmdir
     mv newfolder ~/Documents   # move the folder to new location
     mv ~/Documents/newfolder ./jackpot # move the folder and rename it
     
+# Edit using Nano
+
+Using nano and a filename will create the file and open a sort of an interface where you have controls in the bottom that are activated using Ctrl+<character present below>. 
+    
+    ^O - write out
+    ^X - exit
+    ^R - read file and insert it in the current file
+    ^W - where the search string is which is case insensitive( more options like M-C - this means press Alt+C)
+
+
+
+
+
+
+
