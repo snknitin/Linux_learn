@@ -150,6 +150,16 @@ The config file for nano is in the following file. you can set spellchecker and 
     sudo nano /etc/nanorc
 
 
+# Search using Locate
+
+`Locate` command is case sensitive so use -i to make it insensitive. You can also limit the number of results using --limit <num>. It uses a database to get the info and you can try `locate S` to get the info. This is updated only once a day. 
+
+       locate <search string or regex>
+       locate -i --limit 10 *.conf
+       locate -e *.conf                  # checks if they exist
+       locate --follow *.conf            # check symlinks
+       
+       
 
 
 
