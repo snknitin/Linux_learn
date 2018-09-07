@@ -119,4 +119,11 @@ File command gives you info about a file like the header. Files whose extension 
 
 # Deletion
 
-rm
+rm -r
+rmdir
+
+# Copying
+
+    cp source/ile1.txt destination/file2.txt
+    cp -r source/ destination/                 # To copy folders
+    
