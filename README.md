@@ -119,11 +119,19 @@ File command gives you info about a file like the header. Files whose extension 
 
 # Deletion
 
-rm -r
+rm -r  
 rmdir
 
 # Copying
 
     cp source/ile1.txt destination/file2.txt
     cp -r source/ destination/                 # To copy folders
+    
+# Moving and rename
+
+    mv oldname.txt newname.txt # This will rename the file  
+    mv oldfolder/ newfolder/   #  This renames folder
+    mv newfolder/* .           # move everything from the newfolder to current directory
+    mv newfolder ~/Documents   # move the folder to new location
+    mv ~/Documents/newfolder ./jackpot # move the folder and rename it
     
