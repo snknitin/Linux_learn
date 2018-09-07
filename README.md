@@ -183,5 +183,16 @@ Only typing `find` or `find \\ ` will display everything(files and folders) from
     
 Exec option lets you run another command on each of these results
 
-    sudo find / -maxdepth 14 -type f -size +100k -exec cp {} ~/Desktop/copy_here
+    sudo find / -maxdepth 14 -type f -size +100k -exec cp {} ~/Desktop/copy_here \;  # \; is to end the exec command
 
+create a file called needle in one random folder out of 500,each containing 100 files
+
+    touch haystack/folder$(shuf -i 1-500 -n l)/needle.txt  
+    find haystack/ -type f -name "needle.txt" -exec mv {} ~/Desktop/ \;
+    
+    
+    
+    
+    
+    
+    
