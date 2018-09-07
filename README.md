@@ -171,11 +171,15 @@ Update this database using the `updatedb` command
 
 Only typing `find` or `find \\ ` will display everything(files and folders) from that point or location, where locate only shows files. We can control some of the way it searches(depth)
 
-    find . -maxdepth 3     # it is - even though it is longform
-    find . type d  # show all directories
-    find . type f  # show all files
+    find . -maxdepth 3                          # it is - even though it is longform
+    find . type d                               # show all directories
+    find . type f                               # show all files
+    find . -name "5.txt"                        # Search every location inside current direcrory for a specific file. String can be regex
+    find . -iname "*.tXt"                       # case insensitive
+    sudo find / -type f -size +100k             # find files greater than 100 kb
+    sudo find / -type f -size +100k -size -5M   # and less than 5 mb. This is an AND condition
+    sudo find / -type f -size -100k -o -size -5M   # -o is an OR condition
+    sudo find / -type f -size +100k | wc -l        # send the output to wordcount command to see how many
     
-
-
 
 
