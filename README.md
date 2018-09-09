@@ -228,7 +228,7 @@ Use a key to sort by giving -k  (keydef)
  
  To create and restore backups. Make a tar ball and then compress it. Creating a tar will take in some extra space than the sum of files and then we compress them.
  
-    tar -cvf archive.tar file[1-10].txt      # create, verbose and f is necessary to pass a file to the tar command and make a .tar file
+    tar -cvf archive.tar file{1..10}.txt      # create, verbose and f is necessary to pass a file to the tar command and make a .tar file
     tar -tf archive.tar                      # Test label, . this lets you see inside the .tar
     tar -xvf archive.tar                     # X is extract
     
@@ -242,6 +242,28 @@ Use a key to sort by giving -k  (keydef)
 
 Create and compress. For extracting replace c with x
 
-    tar -cvzf archive.tar file[1-100].txt  # create a .tar.gz file. z is for zip
-    tar -cvjf archive.tar file[1-100].txt  # create a .tar.bz2 file. j is for zip
- 
+    tar -cvzf archive.tar file{1..100}.txt  # create a .tar.gz file. z is for zip
+    tar -cvjf archive.tar file{1..100}.txt  # create a .tar.bz2 file. j is for zip
+
+## Automating workflows using scripts
+
+Create and run a bash script using a text file with .sh extension. This is read by an interpreter that goes line by line in order.
+
+* `#!/bin/bash` is the interpretor and the text file has to start with this to make it a Bourne again shell script
+* `#!/usr/bin/python3` for making it a python script
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
