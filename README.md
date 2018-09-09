@@ -213,14 +213,35 @@ Use a key to sort by giving -k  (keydef)
    
 # Search within files
 
-`grep` finds all the lines that contain a particular search string and it is case sensitive
+`grep` finds/displays all the lines that contain a particular search string and it is case sensitive
 
      grep e -hello.txt
      grep gadsby gadsby_text.txt
      grep -c e gadsby_text.txt      # Count of the search string matches
      grep -ic "our boys" hello.txt  # ignore case and count occurrences of the string
-     grep -cv e gadsby_text.txt     # Number of line that DO NOT have e in them
+     grep -cv e gadsby_text.txt     # Number of line that DO NOT have e in them.  v is inVert
      
     ls hello/ |grep hello.txt       # Seach for filename in a folder
     ls -lF / | grep opt             # find all folders with opt in their name in the root directory
+   
+ # Archive and compress
+ 
+ To create and restore backups. Make a tar ball and then compress it. Creating a tar will take in some extra space than the sum of files and then we compress them.
+ 
+    tar -cvf archive.tar file[1-10].txt      # create, verbose and f is necessary to pass a file to the tar command and make a .tar file
+    tar -tf archive.tar                      # Test label, . this lets you see inside the .tar
+    tar -xvf archive.tar                     # X is extract
     
+`gzip` is faster and `bzip2` makes it smaller due to more computations and is used for really large files
+    
+    gzip archive.tar
+    gunzip archive.tar.gz
+    bzip2 archive.tar
+    bunzip2 archive.tar.bz2
+    zip archive.zip file1.txt file2.txt file3.txt
+
+Create and compress. For extracting replace c with x
+
+    tar -cvzf archive.tar file[1-100].txt  # create a .tar.gz file. z is for zip
+    tar -cvjf archive.tar file[1-100].txt  # create a .tar.bz2 file. j is for zip
+ 
