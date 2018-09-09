@@ -210,6 +210,15 @@ Use a key to sort by giving -k  (keydef)
 
     ls -l /etc |head -n 20| sort -k 5nr  # Sort by the 5th column based on the numeric-value/size in reverse
     
-    
-    
+   
+# Search within files
+
+`grep` finds all the lines that contain a particular search string and it is case sensitive
+
+     grep e -hello.txt
+     grep gadsby gadsby_text.txt
+     grep -c e gadsby_text.txt      # Count of the search string matches
+     grep -ic "our boys" hello.txt  # ignore case and count occurrences of the string
+     grep -cv e gadsby_text.txt     # Number of line that DO NOT have e in them
+     
     
