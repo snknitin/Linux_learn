@@ -252,6 +252,28 @@ Create and run a bash script using a text file with .sh extension. This is read 
 * `#!/bin/bash` is the interpretor and the text file has to start with this to make it a Bourne again shell script
 * `#!/usr/bin/python3` for making it a python script
 
+Move your shell scripts into a folder called bin in your home. 
+
+    chmod +x <script_name>
+   
+Put this in .bashrc 
+
+    PATH="$PATH:$HOME/bin"
+
+Now you can run your scripts from anywhere like a command instead of giving full path to the bash script. Scripts are more powerful than aliases. You can run the bash scripts on a schedule using `cron` jobs. Etymology : Cronos- meaning time.  
+
+* Each user hass a crotab which is a text file that hass a list of scritps that are run accoring to a schedule.
+    
+        crontab -e      # To edit using an editor. press 1 for nano
+    
+* Each row will have 6 columns . 5 for scheduling info and the last column is the command or script to be run. Add a new row
+
+        # m h dom mon dow command    minutes hours date_of_month month(JAN/1)  day_of_week(0/SUN)
+        20 23 1 JUN 0 echo "Hello"   # Spacing doesn't matter as long as there is a gap. You can use * for the values for every minute
+        
+        
+
+
 
 
 
