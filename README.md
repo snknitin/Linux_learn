@@ -271,7 +271,9 @@ Now you can run your scripts from anywhere like a command instead of giving full
         # m h dom mon dow command    minutes hours date_of_month month(JAN/1)  day_of_week(0/SUN)
         20 23 1 JUN 0 echo "Hello"   # Spacing doesn't matter as long as there is a gap. You can use * for the values for every minute
         
-        
+You can use `,` to have multiple values for a column. 0,15,30,45 for minutes or \*/15 to run every 15 minutes. \*/3 for dom will be every third day etc. 
+
+* Try looking at crontab.guru
 
 
 
