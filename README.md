@@ -221,4 +221,6 @@ Use a key to sort by giving -k  (keydef)
      grep -ic "our boys" hello.txt  # ignore case and count occurrences of the string
      grep -cv e gadsby_text.txt     # Number of line that DO NOT have e in them
      
+    ls hello/ |grep hello.txt       # Seach for filename in a folder
+    ls -lF / | grep opt             # find all folders with opt in their name in the root directory
     
