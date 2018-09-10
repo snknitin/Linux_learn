@@ -309,8 +309,14 @@ On Ubuntu there are 4 repositories - Main, Universe, Restricted, Multiverse
         sudo apt-get install <package name>
 
 
+* Uninstall 
 
-
+        sudo apt-get remove <package name>  # But this leaves behind the configuration files
+        sudo apt-get purge <package name>  # Always do this to uninstall
+        sudo apt-get autoremove <package name>  # removes unwanted dependencies
+        sudo apt-get clean                   # deletes all compressed package archives
+        sudo apt-get autoclean   
+        
 
 
 
