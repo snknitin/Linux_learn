@@ -242,8 +242,9 @@ Use a key to sort by giving -k  (keydef)
 
 Create and compress. For extracting replace c with x
 
-    tar -cvzf archive.tar file{1..100}.txt  # create a .tar.gz file. z is for zip
-    tar -cvjf archive.tar file{1..100}.txt  # create a .tar.bz2 file. j is for zip
+    tar -cvzf archive.tar file{1..100}.txt  # create a .tar.gz file. z is for gzip
+    tar -cvjf archive.tar file{1..100}.txt  # create a .tar.bz2 file. j is for bzip2
+    tar -cvJf archive.tar file{1..100}.txt  # create a .tar.xz file. j is for xzip
 
 ## Automating workflows using scripts
 
@@ -282,9 +283,30 @@ You can use `,` to have multiple values for a column. 0,15,30,45 for minutes or 
 Kernel is reponsible for allocating the resources on the computer's hardware that is required by the software(Interface layer). Linux is a kernel, that completes the GNU project(OS).
 
 * `uname -o` tells you your OS  
+* `lsb_release` gives information about teh ubuntu distribution. You can look at packages.ubuntu.com
+* `uname -m` to finf the architecture
 
+On Ubuntu there are 4 repositories - Main, Universe, Restricted, Multiverse
 
+**APT** - Advanced packaging top. It uses caching to speed up performance. This is located at /var/lib/apt/lists
 
+* Search : find all packages relevant to docx
+
+         apt-cache search docx | grep text
+         apt-cache search "web server"
+    
+* Show : displays info about a package
+
+        apt-cache show docx2txt | less
+        
+* Update information : We use get instead of cache because we are getting new information
+
+        sudo apt-get update         # This needs internet
+        sudo apt-get upgrade        # Update before upgrade 
+
+* Install 
+
+        sudo apt-get install <package name>
 
 
 
