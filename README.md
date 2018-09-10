@@ -262,7 +262,7 @@ Put this in .bashrc
 
 Now you can run your scripts from anywhere like a command instead of giving full path to the bash script. Scripts are more powerful than aliases. You can run the bash scripts on a schedule using `cron` jobs. Etymology : Cronos- meaning time.  
 
-* Each user hass a crotab which is a text file that hass a list of scritps that are run accoring to a schedule.
+* Each user has a crontab which is a text file that hass a list of scritps that are run accoring to a schedule.
     
         crontab -e      # To edit using an editor. press 1 for nano
     
@@ -276,8 +276,12 @@ You can use `,` to have multiple values for a column. 0,15,30,45 for minutes or 
 * Try looking at crontab.guru
 
 
+## Installing Open-source Softwares
 
 
+Kernel is reponsible for allocating the resources on the computer's hardware that is required by the software(Interface layer). Linux is a kernel, that completes the GNU project(OS).
+
+* `uname -o` tells you your OS  
 
 
 
